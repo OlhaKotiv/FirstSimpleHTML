@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Serif+Caption|Permanent+Marker|Righteous');
+
+
+.logo{
+    font-family:'Permanent Marker', cursive;
+    color: black;
+}
+.welcome{
+    background-image: url("../img/welcome.jpg");
+}
