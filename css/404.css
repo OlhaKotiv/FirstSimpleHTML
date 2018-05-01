@@ -4,7 +4,7 @@
 /*general styles*/
 body{
     width: 100%;
-    font-family: 'Righteous', cursive; 
+    font-family: 'PT Sans Caption', sans-serif; 
 }
 a{
     outline: none;
@@ -27,14 +27,14 @@ a{
 }
 /*header styles*/
 header{
-    background-image: url("../img/welcome.jpg");
+    background-image: url("../img/sergey-zolkin-192937-unsplash.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 100vh;
     position: relative;
-    color: #50838e;
-    flex-grow: 1;
+    color: rgb(82, 127, 175);
+    flex-grow: 1 auto;
 }
 .headerTop {
     flex-grow: 0;
@@ -53,25 +53,32 @@ header{
     transition: 0.2s;
 }
 .topNav a:hover{
-    color: #609fac;
-    border-bottom: 3px solid #609fac;
+    color: #06f0a2fd;
+    border-bottom: 3px solid #06f0a2fd;
     transition: 0.2s;
 }
 .logo {
     margin-left: 30px;
     font-family:'Permanent Marker', cursive;
     font-size: 35px;
-    color:#4D6680;
+    color:rgb(82, 127, 175);
 }
+.logo:hover{
+    color: #06f0a2fd;
+}
+.sad , .big{
+    font-size: 75px;
+}
+
 .welcome{
-    flex-grow: 1;
-	align-items:center;
+    flex-grow: 1 auto;
+    align-items:center;
 	justify-content:center;
     text-align: center;
     font-size: 56px;
     font-weight: 600;
     line-height: 62px;
-
+    margin-bottom: 15%;
 }
 /*footer styles*/
 footer{
@@ -80,9 +87,10 @@ footer{
     justify-content: space-around;
     flex-wrap: wrap;
     background-color:#4D6680;
-    color: #aabdd1;
+    /*color: #aabdd1;*/
     text-align: center;
+    color: #06f0a2fd;
 }
 .admin a{
-    color: #aabdd1;
+    color: #06f0a2fd;
 }

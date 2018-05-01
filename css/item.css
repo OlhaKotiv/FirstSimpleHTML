@@ -4,7 +4,7 @@
 /*general styles*/
 body{
     width: 100%;
-    font-family: 'Righteous', cursive; 
+    font-family: 'PT Sans Caption', sans-serif; 
 }
 a{
     text-decoration: none;
@@ -14,13 +14,15 @@ input{
     border: 1px solid #cccccc; 
     background:rgb(241, 240, 246) !important; 
     outline: none;
-    font-family: 'Righteous', cursive;
+    font-family: 'PT Sans Caption', sans-serif;
     color: #4D6680;
+    padding: 5px;      
 }
 input:focus {
     color: #000000d5;
     border: 1px solid lightslategray;
-  }
+}
+  
 .flex-row{
     display: flex;
     flex-direction: row;
@@ -31,7 +33,7 @@ input:focus {
 }
 .container{
     width: 100%;
-    height: 100%;;
+    height: 100%;
     margin: 0 auto;
     box-sizing: border-box; 
 }
@@ -48,14 +50,14 @@ header{
     margin-left: 20px;
     font-family:'Permanent Marker', cursive;
     font-size: 23px;
-    color:#4D6680;
+    color:#06f0a2fd;
 }
 .login{
     margin-right: 10px;
     font-size: 16px;
 }
 .login input{
-    border-radius: 3px; 
+    border-radius: 5px; 
 }
 
 .letsSearch{
@@ -65,7 +67,7 @@ header{
     font-size:30px; 
 }
 .search input{
-    border-radius: 5px;
+    border-radius: 7px;
 }
 .search input[type="search"]{
     width: 80%;
@@ -91,14 +93,13 @@ main a{
     list-style-type: none;
 }
 .menu a{
-
     text-transform: uppercase;
     border-bottom: 2px solid transparent;
     transition: 0.2s;
 }
 .menu a:hover{
-    color: #fff ;
-    border-bottom: 2px solid #fff;
+    color: #06f0a2fd ;
+    border-bottom: 2px solid #06f0a2fd;
     transition: 0.2s;
 }
 /*footer styles*/
