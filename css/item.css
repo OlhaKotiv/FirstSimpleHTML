@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Serif+Caption|Permanent+Marker|Righteous&subset=cyrillic');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+@import url('https://use.fontawesome.com/releases/v5.0.10/css/all.css');
+/*general styles*/
+body{
+    width: 100%;
+    font-family: 'Righteous', cursive; 
+}
+a{
+    text-decoration: none;
+    outline: none;
+}
+input{
+    border: 1px solid #cccccc; 
+    background:rgb(241, 240, 246) !important; 
+    outline: none;
+    font-family: 'Righteous', cursive;
+    color: #4D6680;
+}
+input:focus {
+    color: #000000d5;
+    border: 1px solid lightslategray;
+  }
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    width: 100%;
+    height: 100%;;
+    margin: 0 auto;
+    box-sizing: border-box; 
+}
+/*header styles*/
+header{
+    flex-grow: 0;
+    background-color:#aabdd1;
+}
+.headerTop{
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    margin-left: 20px;
+    font-family:'Permanent Marker', cursive;
+    font-size: 23px;
+    color:#4D6680;
+}
+.login{
+    margin-right: 10px;
+    font-size: 16px;
+}
+.login input{
+    border-radius: 3px; 
+}
+
+.letsSearch{
+    background-color: #edecf2;
+}
+.search{
+    font-size:30px; 
+}
+.search input{
+    border-radius: 5px;
+}
+.search input[type="search"]{
+    width: 80%;
+    margin-left: 4.5%;
+}
+/*main section styles*/
+main{
+    flex-grow: 1 auto;
+    background-color: #aabdd1;
+}
+main a{
+    color: #cccccc;
+}
+/*navigation styles*/
+.menu{
+    background-color:#4D6680;
+    line-height: 180%;
+    padding-right: 25px;
+    font-size: 17px; 
+    font-weight: 600;
+}
+.menu li{
+    list-style-type: none;
+}
+.menu a{
+
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    transition: 0.2s;
+}
+.menu a:hover{
+    color: #fff ;
+    border-bottom: 2px solid #fff;
+    transition: 0.2s;
+}
+/*footer styles*/
+footer{
+    flex-grow: 0;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color:#4D6680;
+    color: #aabdd1;
+    text-align: center;
+}
+.warning{
+    text-align: center;
+}
+.admin a{
+    color: #aabdd1;
+}

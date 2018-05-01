@@ -10,7 +10,6 @@ body{
 a{
     outline: none;
     text-decoration: none;
-   
 }
 input{
     border: 1px solid #cccccc; 
@@ -39,14 +38,13 @@ input:focus {
 }
 /*header styles*/
 header{
-    background-image: url("../img/glenn-carstens-peters-203007-unsplash.jpg");
+    background-image: url("../img/welcome.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 100vh;
     position: relative;
-   /* color:#374d63;*/
-   color: #aabdd1;
+    color: #50838e;
 }
 .headerTop {
     flex-grow: 0;
@@ -56,7 +54,7 @@ header{
 .logo {
     margin-left: 30px;
     font-family:'Permanent Marker', cursive;
-    font-size: 40px;
+    font-size: 35px;
     color:#4D6680;
 }
 .enter{
@@ -64,9 +62,6 @@ header{
 }
 .login input{
     border-radius: 3px; 
-    -webkit-border-radius: 3px; 
-    -moz-border-radius: 3px; 
-    -khtml-border-radius: 3px; 
 }
 .welcome{
     flex-grow: 1;
@@ -82,9 +77,6 @@ header{
 }
 .search input{
     border-radius: 5px; 
-    -webkit-border-radius: 5px; 
-    -moz-border-radius: 5px; 
-    -khtml-border-radius: 5px; 
 }
 .down{
     flex-grow: 0;
@@ -97,37 +89,48 @@ header{
 	left: 50%
 }
 .down a{
-    color: #aabdd1;
-}
-/*navigation styles start*/
-nav{
-    position: absolute;
-}
-.hide{
-  display: none;
-}
-.navButton{
-    font-size: 48px;
-	width: 40px;
-    height:40px;
-    margin-top: 7%;
-    margin-left: 3%;
-    position: fixed;
-}
-.navButton a{
-    color: #3f5871;
+    color: #50838e;
 }
 /*main styles start*/
 main{
     flex-grow: 1 auto;
+    background-color: #aabdd1;
+}
+main a{
+    color: #cccccc;
+}
+/*navigation styles start*/
+.menu{
+    background-color:#4D6680;
+    line-height: 180%;
+    padding-right: 25px;
+    font-size: 17px; 
+    font-weight: 600;
+}
+.menu li{
+    list-style-type: none;
+}
+.menu a{
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    transition: 0.2s;
+}
+.menu a:hover{
+    color: #fff ;
+    border-bottom: 2px solid #fff;
+    transition: 0.2s;
 }
 .articles{
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    margin-top: 20px;
 }
 .articleItem{
-    flex: 47%;
+    flex-basis: 47%;
+    background-color: #edecf2;
+    margin-bottom: 30px;
+    border-radius: 5px;
 }
 .articleItem:hover .articleDescription1{
     opacity: 1;
@@ -143,9 +146,36 @@ main{
     opacity: 0;
     position: relative; 
 }
+.moreItems{
+    border: 1px solid #aabdd1;
+    border-radius: 5px;
+    background-color: #edecf2;
+    width: 40%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #4D6680;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.moreItems:hover{
+    background-color:#4D6680 ;
+    color: #edecf2;
+    transition: 0.2s;
+}
 /*fooer styles start*/
 footer{
     flex-grow: 0;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color:#4D6680;
+    color: #aabdd1;
+}
+.warning{
+    text-align: center;
+}
+.admin a{
+    color: #aabdd1;
 }
