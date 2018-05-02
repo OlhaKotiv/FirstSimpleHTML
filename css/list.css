@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Serif+Caption|Permanent+Marker|Righteous&subset=cyrillic");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css");
+@import url("https://use.fontawesome.com/releases/v5.0.10/css/all.css");
+/*general styles start*/
+body,
+html,
+header,
+footer,
+main {
+  height: 100%;
+  width: 100%;
+  font-family: "PT Sans Caption", sans-serif;
+}
+body {
+  background: #e3e8ec;
+  color: #2d2d2d;
+  font-family: "Arial", "Helvetica";
+  font-size: 16px;
+  line-height: 1.5;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  outline: none;
+  text-decoration: none;
+  color: #4d6680;
+}
+a:hover {
+  color: #06f0a2fd;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+/*header styles start*/
+header {
+  flex-grow: 0;
+  background-image: url("../img/goran-ivos-246271-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #aabdd1;
+  padding: 20px 0 10px;
+}
+.headerTop {
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  margin-left: 20px;
+  font-family: "Permanent Marker", cursive;
+  font-size: 25px;
+  transition: 0.2s;
+  /* color: rgb(175, 187, 199);*/
+  color: rgb(239, 242, 255);
+}
+.logo:hover {
+  color: #06f0a2fd;
+  transition: 0.2s;
+}
+.topNav a {
+  color: rgb(239, 242, 255);
+  display: inline-block;
+  margin-right: 7px;
+  font-weight: 600;
+  border-bottom: 3px solid transparent;
+  transition: 0.2s;
+}
+.topNav a:hover {
+  color: #06f0a2fd;
+  border-bottom: 3px solid #06f0a2fd;
+  transition: 0.2s;
+}
+/*main styles start*/
+main {
+  flex-grow: 1;
+  line-height: 1.8;
+}
+.page-wrapper {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.article-holder {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 10px 0;
+  margin: 30px 0 0 0;
+}
+.article-holder article {
+  background: #ffffff;
+  margin: 10px 0 0 0;
+  flex-basis: calc(33% - 4px);
+}
+.article-holder article a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.article-holder article .details {
+  padding: 30px;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #7d7d7d;
+  flex-grow: 1;
+}
+.article-holder article h2 {
+  font-weight: 400;
+  font-size: 18px;
+  color: #2d2d2d;
+}
+.article-holder article img {
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  transition: 0.3s;
+}
+.article-holder article:hover img {
+  opacity: 0.75;
+  transition: 0.3s;
+}
+.article-holder article .secondary {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px 30px;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+.article-holder article .secondary .views {
+  font-size: 16px;
+  font-weight: 600;
+  display: block;
+  position: relative;
+  padding: 0 0 0 16px;
+}
+.article-holder article .secondary .views:after {
+  display: block;
+  position: absolute;
+  content: "☋";
+  top: 0;
+  left: 0;
+}
+
+.moreItems {
+  border: 1px solid #aabdd1;
+  border-radius: 7px;
+  background-color: #edecf2;
+  margin: 20px auto 10px;
+  padding: 10px 15px;
+  display: table;
+  text-transform: uppercase;
+  color: #4d6680;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.moreItems:hover {
+  background-color: #06f0a2fd;
+  color: #edecf2;
+  transition: 0.2s;
+}
+footer {
+  flex-grow: 0;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #4d6680;
+  color: #06f0a2fd;
+  text-align: center;
+}
+.warning {
+  text-align: center;
+}
+.admin a {
+  color: #06f0a2fd;
+}
+/*scrolltop styles*/
+.scrolltop {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.75);
+  opacity: 0.75;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+  font-size: 30px;
+}
+.scrolltop a {
+  color: #06f0a2fd;
+}
+.scrolltop:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+/************************* mobile ***************************/
+
+@media (max-width: 800px) {
+  header {
+    display: block;
+    padding: 10px 0 0 0;
+  }
+
+  main h1 {
+    margin: 20px 0 30px;
+  }
+  .article-holder {
+    margin: 20px 0 0 0;
+  }
+  .article-holder article {
+    flex-basis: calc(50% - 5px);
+  }
+  .scrolltop {
+    bottom: 20px;
+    right: 20px;
+  }
+  .article-wrapper article {
+    display: block;
+    margin: 0 0 20px 0;
+  }
+  .article-wrapper {
+    flex-direction: column;
+  }
+  .article-wrapper aside,
+  .article-wrapper article {
+    max-width: 100%;
+    width: 100%;
+  }
+  .article-wrapper aside img {
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+  .article-wrapper aside a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 0 10px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .article-holder article {
+    flex-basis: 100%;
+  }
+  .scrolltop {
+    bottom: 10px;
+    right: 10px;
+  }
+}
