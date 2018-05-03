@@ -3,8 +3,9 @@
 @import url("https://use.fontawesome.com/releases/v5.0.10/css/all.css");
 
 /*general styles*/
-body {
+body,header,main,footer {
   width: 100%;
+
   font-family: "PT Sans Caption", sans-serif;
 }
 a {
@@ -35,7 +36,7 @@ input:focus {
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  box-sizing: border-box;
+ 
 }
 /*header styles*/
 header {
@@ -51,15 +52,18 @@ header {
   flex-grow: 0;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .logo {
+  flex: 30%;
   margin-left: 30px;
   font-family: "Permanent Marker", cursive;
   font-size: 35px;
   color: #4d6680;
 }
 .enter {
-  margin-right: 10px;
+  flex: 70%;
+  margin-left: 15%;
 }
 .login input {
   border-radius: 3px;
@@ -97,11 +101,15 @@ header {
 main {
   flex-grow: 1 auto;
   background-color: #aabdd1;
+  box-sizing: border-box;
 }
 main a {
   color: #cccccc;
 }
 /*navigation styles start*/
+aside {
+  flex: 20%;
+}
 .menu {
   background-color: #4d6680;
   line-height: 180%;
@@ -123,42 +131,72 @@ main a {
   transition: 0.2s;
 }
 .articles {
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 20px;
+  flex: 80%;
+  line-height: 1.8;
+  box-sizing: border-box;
+ 
 }
-.articleItem {
-  flex-basis: 47%;
-  background-color: #edecf2;
-  margin-bottom: 30px;
-  border-radius: 5px;
-  box-sizing: content-box;
+.page-wrapper {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
-.articleItem:hover .articleDescription1 {
-  opacity: 1;
+.article-holder {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 10px 0;
+  margin: 10px 0 0 0;
 }
-.articleItem:hover .articleImage {
-  opacity: 0;
+.article-holder article {
+  background: #ffffff;
+  margin: 10px 0 0 0;
+  flex-basis: calc(50% - 4px);
+}
+/*animation*/
+
+.articleImage {
+  position: relative;
+  font-size: 25px;
+  width: 100%;
+  height: 100%;
   transition: 0.2s;
 }
-.articleImage {
-  position: absolute;
+.articleImage img {
+  width: 100%;
+  height: 100%;
 }
-
-.articleDescription1 {
+.hidden {
   opacity: 0;
-  position: relative;
 }
+.articleImage:hover .hidden {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.863);
+  transition: 0.2s;
+  transform: translateZ(0);
+}
+.hidden .articleDescription {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+/*end*/
 .moreItems {
   border: 1px solid #aabdd1;
   border-radius: 7px;
   background-color: #edecf2;
-  width: 40%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 5px;
-  text-align: center;
+  margin: 10px auto 20px;
+  padding: 15px 25px;
+  display: table;
   text-transform: uppercase;
   color: #4d6680;
   cursor: pointer;
@@ -169,7 +207,7 @@ main a {
   color: #edecf2;
   transition: 0.2s;
 }
-/*fooer styles start*/
+/*footer styles start*/
 footer {
   flex-grow: 0;
   align-items: center;
@@ -196,13 +234,18 @@ footer {
   opacity: 0.75;
   cursor: pointer;
   transition: 0.3s;
-  text-align: center;
-  font-size: 30px;
-}
-.scrolltop a {
-  color: #06f0a2fd;
 }
 .scrolltop:hover {
   opacity: 1;
   transition: 0.3s;
+}
+.scrolltop:after {
+  content: "⇪";
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ffffff;
 }

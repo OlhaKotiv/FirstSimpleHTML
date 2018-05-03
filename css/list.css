@@ -157,7 +157,7 @@ main {
   border: 1px solid #aabdd1;
   border-radius: 7px;
   background-color: #edecf2;
-  margin: 20px auto 10px;
+  margin: 20px auto 30px;
   padding: 10px 15px;
   display: table;
   text-transform: uppercase;
@@ -197,15 +197,20 @@ footer {
   opacity: 0.75;
   cursor: pointer;
   transition: 0.3s;
-  text-align: center;
-  font-size: 30px;
-}
-.scrolltop a {
-  color: #06f0a2fd;
 }
 .scrolltop:hover {
   opacity: 1;
   transition: 0.3s;
+}
+.scrolltop:after {
+  content: "⇪";
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ffffff;
 }
 
 /************************* mobile ***************************/

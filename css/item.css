@@ -129,17 +129,22 @@ footer {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: rgba(0, 0, 0, 0.75);
-  opacity: 0.75;
+  background: rgba(0,0,0,.75);
+  opacity: .75;
   cursor: pointer;
-  transition: 0.3s;
-  text-align: center;
-  font-size: 30px;
-}
-.scrolltop a {
-  color: #06f0a2fd;
+  transition: .3s;
 }
 .scrolltop:hover {
   opacity: 1;
-  transition: 0.3s;
+  transition: .3s;
+}
+.scrolltop:after {
+  content: "⇪";
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ffffff;
 }
