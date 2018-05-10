@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="k" dir="ltr">
+
+<head>
+    <title>Адмiн-панель</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/admin.css?version=1">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="shortcut icon" href="../img/neurocapability-favicon-1.png">
+    <script src="../scripts/jquery-min.js"></script>
+    <script src="../scripts/jquery-ui-min.js"></script>
+    <script src="../scripts/admin/error.js"></script>
+    <script src="../scripts/admin/aliasmaker.js"></script>
+    <script src="../scripts/admin/click-actions.js?version=1"></script>
+    <script src="../scripts/admin/categories.js?version=1"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="flex-row">
+            <div class="title">Ви ввійшли як
+                <span id="moderator">superadmin</span>
+            </div>
+            <div class="buttons">
+                <a href="#">Вихід</a>
+                <a href="categories.html" class="active">Розділи</a>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- error message -->
+    <div class="error-holder">
+        <span>Error</span>
+    </div>
+    <!-- error message end -->
+    <div class="holder type">
+        <div class="options-header">
+            <div id="b-new-category" class="button green">Додати категорию +</div>
+        </div>
+        <div class="holder c-holder">
+            <div class="blog-content">
+                <ul class="ui-sortable" id="sortable">
+                    <!--main page -->
+                    <li class="ui-state-default ismain ui-sortable-handle">
+                        <div class="text">
+                            <span class="title">Ласкаво просимо у DevLibrary</span>
+                            <span class="small">Головна сторінка (0 статтей)</span>
+                        </div>
+                        <div class="buttons">
+                            <a href="editcategory.html" class="edit">Редактор</a>
+                        </div>
+                    </li>
+                    <!-- main page end -->
+                    <!-- category -->
+                    <li class="ui-state-default ui-sortable-handle">
+                        <div class="text">
+                            <span class="title">CSS</span>
+                            <span class="small">4 статті</span>
+                        </div>
+                        <div class="buttons">
+                            <a href="articles.html" class="article">Статті</a>
+                            <a href="editcategory.html" class="edit">Редактор</a>
+                        </div>
+                    </li>
+                    <!-- category end -->
+                    <li class="ui-state-default ui-sortable-handle">
+                        <div class="text">
+                            <span class="title">JS</span>
+                            <span class="small">4 статті</span>
+                        </div>
+                        <div class="buttons">
+                            <a href="articles.html" class="article">Статті</a>
+                            <a href="editcategory.html" class="edit">Редактор</a>
+                        </div>
+                    </li>
+                    <li class="ui-state-default ui-sortable-handle">
+                        <div class="text">
+                            <span class="title">HTML</span>
+                            <span class="small">3 статті</span>
+                        </div>
+                        <div class="buttons">
+                            <a href="articles.html" class="article">Статті</a>
+                            <a href="editcategory.html" class="edit">Редактор</a>
+                        </div>
+                    </li>
+                    <li class="ui-state-default ui-sortable-handle">
+                        <div class="text">
+                            <span class="title">Вестка</span>
+                            <span class="small">6 статей</span>
+                        </div>
+                        <div class="buttons">
+                            <a href="articles.html" class="article">Статті</a>
+                            <a href="editcategory.html" class="edit">Редактор</a>
+                        </div>
+                    </li>
+                    <li class="ui-state-default ui-sortable-handle">
+                        <div class="text">
+                            <span class="title">Sass</span>
+                            <span class="small">4 статті</span>
+                        </div>
+                        <div class="buttons">
+                            <a href="articles.html" class="article">Статті</a>
+                            <a href="editcategory.html" class="edit">Редактор</a>
+                        </div>
+                    </li>
+                    <li class="ui-state-default ui-sortable-handle">
+                        <div class="text">
+                            <span class="title">Gulp</span>
+                            <span class="small">8 статей</span>
+                        </div>
+                        <div class="buttons">
+                            <a href="articles.html" class="article">Статті</a>
+                            <a href="editcategory.html" class="edit">Редактор</a>
+                        </div>
+                    </li>
+                    <li class="ui-state-default ui-sortable-handle">
+                        <div class="text">
+                            <span class="title">Адміністрування</span>
+                            <span class="small">5 статей</span>
+                        </div>
+                        <div class="buttons">
+                            <a href="articles.html" class="article">Статті</a>
+                            <a href="editcategory.html" class="edit">Редактор</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <small>#DevLibrary © 2018</small>
+    </footer>
+    <!-- footer end -->
+</body>
+
+</html>

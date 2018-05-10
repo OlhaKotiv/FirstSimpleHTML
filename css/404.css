@@ -1,30 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=PT+Serif+Caption|Permanent+Marker|Righteous&subset=cyrillic");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css");
-@import url("https://use.fontawesome.com/releases/v5.0.10/css/all.css");
-/*general styles*/
-body {
-  width: 100%;
-  font-family: "PT Sans Caption", sans-serif;
-}
-a {
-  outline: none;
-  text-decoration: none;
-  color: #4d6680;
-}
-.flex-column {
-  display: flex;
-  flex-direction: column;
-}
-.flex-row {
-  display: flex;
-  flex-direction: row;
-}
-.container {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
+@import url("styles.css");
+
 /*header styles*/
 header {
   background-image: url("../img/sergey-zolkin-192937-unsplash.jpg");
@@ -81,18 +56,4 @@ header {
   font-weight: 600;
   line-height: 62px;
   margin-bottom: 15%;
-}
-/*footer styles*/
-footer {
-  flex-grow: 0;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  background-color: #4d6680;
-  /*color: #aabdd1;*/
-  text-align: center;
-  color: #06f0a2fd;
-}
-.admin a {
-  color: #06f0a2fd;
 }

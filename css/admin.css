@@ -14,19 +14,16 @@
   visibility: hidden;
   line-height: 0;
 }
-
 .centered {
   display: table;
   margin: 0 auto;
 }
-
 .fl_left {
   float: left;
 }
 .fl_right {
   float: right;
 }
-
 .hidden {
   overflow: hidden;
 }
@@ -36,7 +33,6 @@
 .full {
   width: 100%;
 }
-
 .flex-container {
   display: flex;
   flex: auto;

@@ -1,44 +1,19 @@
-@import url("https://fonts.googleapis.com/css?family=PT+Serif+Caption|Permanent+Marker|Righteous&subset=cyrillic");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css");
-@import url("https://use.fontawesome.com/releases/v5.0.10/css/all.css");
+@import url("styles.css");
 /*general styles start*/
-body,
-html,
-header,
-footer,
-main {
-  height: 100%;
-  width: 100%;
-  font-family: "PT Sans Caption", sans-serif;
-}
 body {
   background: #e3e8ec;
   color: #2d2d2d;
-  font-family: "Arial", "Helvetica";
   font-size: 16px;
   line-height: 1.5;
 }
-ul {
-  list-style-type: none;
-}
 a {
-  outline: none;
-  text-decoration: none;
   color: #4d6680;
 }
 a:hover {
   color: #06f0a2fd;
 }
-.flex-row {
-  display: flex;
-  flex-direction: row;
-}
-.flex-column {
-  display: flex;
-  flex-direction: column;
-}
 /*header styles start*/
-header {
+#top {
   flex-grow: 0;
   background-image: url("../img/goran-ivos-246271-unsplash.jpg");
   background-repeat: no-repeat;
@@ -81,17 +56,9 @@ main {
   flex-grow: 1;
   line-height: 1.8;
 }
-.page-wrapper {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  padding: 0 10px;
-  box-sizing: border-box;
-}
 
 .article-holder {
-  display: flex;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 10px 0;
   margin: 30px 0 0 0;
@@ -101,13 +68,13 @@ main {
   margin: 10px 0 0 0;
   flex-basis: calc(33% - 4px);
 }
-.article-holder article a {
+.article-holder a {
   text-decoration: none;
   display: flex;
   flex-direction: column;
   height: 100%;
 }
-.article-holder article .details {
+.details {
   padding: 30px;
   box-sizing: border-box;
   font-size: 14px;
@@ -119,17 +86,17 @@ main {
   font-size: 18px;
   color: #2d2d2d;
 }
-.article-holder article img {
+.article-holder img {
   width: 100%;
   height: auto;
   opacity: 1;
   transition: 0.3s;
 }
-.article-holder article:hover img {
+article:hover img {
   opacity: 0.75;
   transition: 0.3s;
 }
-.article-holder article .secondary {
+.secondary {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -138,21 +105,20 @@ main {
   box-sizing: border-box;
   font-size: 12px;
 }
-.article-holder article .secondary .views {
+.views {
   font-size: 16px;
   font-weight: 600;
   display: block;
   position: relative;
   padding: 0 0 0 16px;
 }
-.article-holder article .secondary .views:after {
+.views:after {
   display: block;
   position: absolute;
   content: "☋";
   top: 0;
   left: 0;
 }
-
 .moreItems {
   border: 1px solid #aabdd1;
   border-radius: 7px;
@@ -170,57 +136,18 @@ main {
   color: #edecf2;
   transition: 0.2s;
 }
-footer {
-  flex-grow: 0;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  background-color: #4d6680;
-  color: #06f0a2fd;
-  text-align: center;
-}
-.warning {
-  text-align: center;
-}
-.admin a {
-  color: #06f0a2fd;
-}
-/*scrolltop styles*/
-.scrolltop {
-  position: fixed;
-  bottom: 40px;
-  right: 40px;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: rgba(0, 0, 0, 0.75);
-  opacity: 0.75;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.scrolltop:hover {
-  opacity: 1;
-  transition: 0.3s;
-}
-.scrolltop:after {
-  content: "⇪";
-  width: 100%;
-  text-align: center;
-  line-height: 40px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #ffffff;
-}
 
 /************************* mobile ***************************/
 
-@media (max-width: 800px) {
+/*@media (max-width: 800px) {
   header {
     display: block;
     padding: 10px 0 0 0;
   }
-
+#top{
+  display: flex;
+flex-direction: column;
+}
   main h1 {
     margin: 20px 0 30px;
   }
@@ -267,4 +194,4 @@ footer {
     bottom: 10px;
     right: 10px;
   }
-}
+}*/

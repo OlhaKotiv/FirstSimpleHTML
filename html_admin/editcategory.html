@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+
+<head>
+    <title>Адмін-панель</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/admin.css?version=1">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="shortcut icon" href="../img/neurocapability-favicon-1.png">
+    <script src="../scripts/jquery-min.js"></script>
+    <script src="../scripts/jquery-ui-min.js"></script>
+    <script src="../scripts/admin/texthighlighter/rangy-core.js"></script>
+    <script src="../scripts/admin/texthighlighter/jquery.texthighlighter.js"></script>
+    <script src="../scripts/admin/mediadescription.js"></script>
+    <script src="../scripts/admin/error.js"></script>
+    <script src="../scripts/admin/aliasmaker.js"></script>
+    <script src="../scripts/admin/click-actions.js?version=1"></script>
+    <script src="../scripts/admin/categories.js?version=1"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="flex-row">
+            <div class="title">Ви ввійшли як
+                <span id="moderator">superadmin</span>
+            </div>
+            <div class="buttons">
+                <a href="#">Вихід</a>
+                <a href="categories.html">Розділи</a>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- error message -->
+    <div class="error-holder">
+        <span>Error</span>
+    </div>
+    <!-- error message end -->
+    <div class="holder type flex-container flex-col padding20">
+        <!-- editor's form -->
+        <div class="flex-row flex-full">
+            <div class="flex-col flex-half padding20">
+                <form class="input-row" method="POST">
+                    <label for="title">Заголовок категорії</label>
+                    <input type="text" id="title">
+                </form>
+                <form class="input-row" method="POST">
+                    <label for="alias">URL категорії (без домена та /)</label>
+                    <input type="text" id="alias">
+                </form>
+                <form class="input-row">
+                    <label for="menutitle">Заголовок категорії в меню</label>
+                    <input type="text" id="menutitle">
+                </form>
+            </div>
+            <div class="flex-col flex-half padding20">
+                <form class="input-row">
+                    <label for="htmltitle">META title</label>
+                    <input type="text" id="htmltitle">
+                </form>
+                <form class="input-row">
+                    <label for="htmldescription">META description</label>
+                    <input type="text" id="htmldescription">
+                </form>
+                <form class="input-row">
+                    <label for="htmlkeywords">META keywords</label>
+                    <input type="text" id="htmlkeywords">
+                </form>
+            </div>
+        </div>
+        <div class="flex-col flex-full padding20">
+            <div class="input-row flex-row">
+                <span class="checker ismain"></span>
+                <span class="label">Головна сторінка</span>
+            </div>
+        </div>
+        <form class="flex-col flex-full padding20">
+            <label for="shortdescription">Короткий опис</label>
+            <textarea id="shortdescription"></textarea>
+        </form>
+        <div class="flex-col flex-full padding20">
+            <div class="mediaelement article-mediadescr clear">
+                <label for="mediacontent">Текст на сторінці категорії</label>
+                <div id="mediacontent" class="mediacontent" style="display: none"></div>
+            </div>
+        </div>
+        <!-- editor's form end -->
+        <!-- history ofmoderation -->
+        <div class="flex-col flex-full padding20">
+            <div class="open-bayan link">Історія модерації:</div>
+            <div class="bayan v-list">
+                <div class="v-item flex-row">
+                    <div class="title">superadmin</div>
+                    <div class="created flex-col">
+                        <span>Створена: Чт, 10. Тра 2018, в 20:24</span>
+                    </div>
+                </div>
+                <div class="v-item flex-row">
+                    <div class="title">superadmin</div>
+                    <div class="created flex-col">
+                        <span>Відмодерована: Пт, 11. Тра 2018, в 22:22</span>
+                    </div>
+                </div>
+                <div class="v-item flex-row">
+                    <div class="title">superadmin</div>
+                    <div class="created flex-col">
+                        <span>Відмодерована: Пн, 14. тра 2018, в 18:39</span>
+                    </div>
+                </div>
+                <div class="v-item flex-row">
+                    <div class="title">superadmin</div>
+                    <div class="created flex-col">
+                        <span>Відмодерована: Вт, 15. Янв 2018, в 20:22</span>
+                    </div>
+                </div>
+                <div class="v-item flex-row">
+                    <div class="title">superadmin</div>
+                    <div class="created flex-col">
+                        <span>Відмодерована: Вт, 07. Фев 2017, в 11:0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- history of moderation end-->
+        <!-- buttons -->
+        <div class="flex-col flex-full padding20">
+            <div class="buttons id-info flex-row flex-centered">
+                <div class="loader"></div>
+                <div class="button green" id="edit-category">Зберети</div>
+                <div class="button red" id="delete-category">Видалити</div>
+                <a href="categories.html" class="button">Відміна</a>
+            </div>
+        </div>
+        <!-- buttons end -->
+    </div>
+    <!-- footer -->
+    <footer>
+        <small>#DevLibrary © 2018</small>
+    </footer>
+    <!-- footer end -->
+</body>
+
+</html>
