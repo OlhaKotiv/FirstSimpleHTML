@@ -2,12 +2,12 @@
 <html lang="uk">
 
 <head>
-    <title></title>
+    <title>10 способів мінімізувати reflow і підвищити продуктивність</title>
     <meta charset="UTF-8">
     <meta name="description" content="книга">
-    <meta name="keywords" content="програмування книга ">
+    <meta name="keywords" content="програмування,книга,стаття,css,reflow">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="og:image" content="../img/social.jpg">
+    <meta name="og:image" content="../img/welcome.jpg">
     <meta name="robots" content="index, follow">
     <link rel="shortcut icon" href="../img/favicon.png">
     <link rel="stylesheet" href="../css/articleitem.css">
@@ -20,14 +20,22 @@
                 <a href="index.html" class="logo">
                     <h2>DevLibrary</h2>
                 </a>
-                <div class="enter">
-                    <form class="login">
-                        <input type="email" placeholder="Електронна адреса">
-                        <input type="password" placeholder="Пароль">
-                        <input type="submit" value="Увійти">
-                        <input type="submit" value="Зареєструватись">
-                    </form>
-                </div>
+                <nav>
+                    <ul class=" topNav flex-row">
+                        <li>
+                            <a href="list.html">Книги</a>
+                        </li>
+                        <li>
+                            <a href="list.html">Блог</a>
+                        </li>
+                        <li>
+                            <a href="signin.html">Увійти</a>
+                        </li>
+                        <li>
+                            <a href="signup.html">Зареєстуватись</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
             <div class="letsSearch ">
                 <form class="search">
@@ -36,53 +44,7 @@
                 </form>
             </div>
         </header>
-        <main class="flex-row">
-            <aside class="menu">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="">
-                                <i class="fas fa-book"></i> Книги</a>
-                        </li>
-                        <ul>
-                            <li>
-                                <a href="">JAVASCRIPT</a>
-                            </li>
-                            <li>
-                                <a href="">CSS і HTML </a>
-                            </li>
-                            <li>
-                                <a href="">SEO</a>
-                            </li>
-                            <li>
-                                <a href="">ENGLISH</a>
-                            </li>
-                            <li>
-                                <a href="">АДМІНІСТРУВАННЯ</a>
-                            </li>
-                            <li>
-                                <a href="">ІНШІ</a>
-                            </li>
-                        </ul>
-                        <li>
-                            <a href="">
-                                <i class="far fa-newspaper"></i> Блог</a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <i class="fas fa-user"></i> ПРОФІЛЬ</a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <i class="fas fa-envelope"></i> НАПИСАТИ НАМ</a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <i class="fas fa-info-circle"></i> ПРО ПРОЕКТ</a>
-                        </li>
-                    </ul>
-                </nav>
-            </aside>
+        <main>
             <section class="item">
                 <div class="article-wrapper flex-row">
                     <!-- Статья -->
@@ -230,29 +192,44 @@
                         </div>
                         <div class="comment">
                             <h3>Залиште свій коментар</h3>
-                            <form>
+                            <form class="leavecomment">
                                 <input type="text" placeholder="Введіть своє ім'я">
                                 <textarea wrp-cols="30" name="text" rows="5"></textarea>
                                 <input type="submit" value="Опублікувати">
                             </form>
 
                             <div class="com">
-                                <h6>ron wizly</h6>
-                                <time>12 jun 2018</time>
-                                <p>dfvhbjkgh jhkjgytf hjgjhkgf khghgtryb </p>
+                                <h6>Климентій Гевко</h6>
+                                <time>12 Тра 2018</time>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, sunt dignissimos nostrum
+                                    quas distinctio, delectus iure corporis ab repellat recusandae quasi sit animi et possimus
+                                    vel culpa laudantium? Sit, sequi? </p>
+                            </div>
+                            <div class="com">
+                                <h6>Роман Семенюк</h6>
+                                <time>12 Тра 2018</time>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium animi aperiam dolore
+                                    doloremque rem iste eaque possimus, consectetur ducimus voluptatibus beatae deserunt
+                                    ipsam, error commodi nisi magni corporis adipisci. Tenetur. </p>
+                            </div>
+                            <div class="com">
+                                <h6>Василь Швець</h6>
+                                <time>12 Чер 2018</time>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor ut cum eos. Expedita harum
+                                    architecto sit commodi corporis, tempore at rem alias? Veritatis ipsa libero consequuntur
+                                    sed, quos ipsam quidem. </p>
                             </div>
                         </div>
-
                     </article>
                     <!--article end-->
                     <!--aside articles -->
-                    <aside>
+                    <aside class="other-articles">
                         <!-- tags -->
                         <div class="tags">
-                            <a href="index.html">#css</a>
-                            <a href="index.html">#верстка</a>
-                            <a href="index.html">#оптимізація</a>
-                            <a href="index.html">#reflow</a>
+                            <a href="list.html">#css</a>
+                            <a href="list.html">#верстка</a>
+                            <a href="list.html">#оптимізація</a>
+                            <a href="list.html">#reflow</a>
                         </div>
 
                         <!--article link-->
@@ -303,8 +280,8 @@
         </footer>
         <div class="scrolltop"></div>
     </div>
-    <script src="/scripts/jquery-min.js"></script>
-    <script src="/scripts/client/main.js"></script>
+    <script src="../scripts/jquery-min.js"></script>
+    <script src="../scripts/client/script.js"></script>
 </body>
 
 </html>

@@ -24,6 +24,7 @@ header {
   font-size: 35px;
   color: #4d6680;
 }
+
 .enter {
 margin-right: 10px;
 }
@@ -69,7 +70,7 @@ main a {
   color: #cccccc;
 }
 /*navigation styles start*/
-aside {
+/*aside {
   flex: 20%;
 }
 .menu {
@@ -91,9 +92,9 @@ aside {
   color: #06f0a2fd;
   border-bottom: 2px solid #06f0a2fd;
   transition: 0.2s;
-}
+}*/
 .articles {
-  flex: 80%;
+
   line-height: 1.8;
   box-sizing: border-box;
 }
@@ -114,7 +115,7 @@ aside {
 .article-holder article {
   background: #ffffff;
   margin: 10px 0 0 0;
-  flex-basis: calc(50% - 4px);
+  flex-basis: calc(33% - 4px);
 }
 /*animation*/
 

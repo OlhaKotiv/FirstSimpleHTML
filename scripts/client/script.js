@@ -1,4 +1,4 @@
- $(document).ready(function() {
+$(document).ready(function() {
   $("body").on("click", ".moreItems", function() {
     var button = $(this);
 

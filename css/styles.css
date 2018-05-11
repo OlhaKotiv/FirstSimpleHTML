@@ -45,6 +45,23 @@ input:focus {
 ul {
   list-style-type: none;
 }
+.topNav li {
+  list-style-type: none;
+  margin-right: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.topNav a {
+  border-bottom: 3px solid transparent;
+  transition: 0.2s;
+  color: #4d6680;
+}
+.topNav a:hover {
+  color: #06f0a2fd;
+  border-bottom: 3px solid #06f0a2fd;
+  transition: 0.2s;
+}
 /*footer styles start*/
 footer {
   flex-grow: 0;

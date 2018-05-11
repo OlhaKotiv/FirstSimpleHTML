@@ -23,14 +23,22 @@
                 <a href="index.html" class="logo">
                     <h2>DevLibrary</h2>
                 </a>
-                <div class="enter">
-                    <form class="login">
-                        <input type="email" placeholder="Електронна адреса">
-                        <input type="password" placeholder="Пароль">
-                        <input type="submit" value="Увійти">
-                        <input type="submit" value="Зареєструватись">
-                    </form>
-                </div>
+                <nav>
+                    <ul class=" topNav flex-row">
+                        <li>
+                            <a href="list.html">Книги</a>
+                        </li>
+                        <li>
+                            <a href="list.html">Блог</a>
+                        </li>
+                        <li>
+                            <a href="signin.html">Увійти</a>
+                        </li>
+                        <li>
+                            <a href="signup.html">Зареєстуватись</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
             <section class="welcome flex-column">
                 <h2>Дізнайся щось нове сьогодні</h2>
@@ -51,52 +59,6 @@
         <!--NAVIGATION ENDS-->
         <!--MAIN PART STARTS-->
         <main class="flex-row" id="main">
-            <aside class="menu">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="">
-                                <i class="fas fa-book"></i> Книги</a>
-                        </li>
-                        <ul>
-                            <li>
-                                <a href="">JAVASCRIPT</a>
-                            </li>
-                            <li>
-                                <a href="">CSS і HTML </a>
-                            </li>
-                            <li>
-                                <a href="">SEO</a>
-                            </li>
-                            <li>
-                                <a href="">ENGLISH</a>
-                            </li>
-                            <li>
-                                <a href="">АДМІНІСТРУВАННЯ</a>
-                            </li>
-                            <li>
-                                <a href="">ІНШІ</a>
-                            </li>
-                        </ul>
-                        <li>
-                            <a href="">
-                                <i class="far fa-newspaper"></i> Блог</a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <i class="fas fa-user"></i> ПРОФІЛЬ</a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <i class="fas fa-envelope"></i> НАПИСАТИ НАМ</a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <i class="fas fa-info-circle"></i> ПРО ПРОЕКТ</a>
-                        </li>
-                    </ul>
-                </nav>
-            </aside>
             <section class=" articles page-wrapper flex-column">
                 <div class="article-holder">
                     <article>
@@ -104,7 +66,7 @@
                             <img src="../img/items/books/welcome-page.jpg" alt="Скот Чакон, Бен Штрауб, Git для профессионального программиста.">
                             <div class="hidden">
                                 <div class="articleDescription">
-                                    <a href="">
+                                    <a href="item.html">
                                         <ul>
                                             <li>АВТОР: Скот Чакон, Бен Штрауб</li>
                                             <li>РІК : 2016</li>
@@ -121,7 +83,7 @@
                             <img src="../img/items/books/welcome-page1.jpg" alt="Крейг Хант,TCP/IP. Сетевое администрирование">
                             <div class="hidden">
                                 <div class="articleDescription">
-                                    <a href="">
+                                    <a href="item.html">
                                         <ul>
                                             <li>АВТОР: Крейг Хант</li>
                                             <li>РІК : 2007</li>
@@ -138,7 +100,7 @@
                             <img src="../img/items/books/welcome-page2.jpg" alt="Джошуа Блох,Effective Java">
                             <div class="hidden">
                                 <div class="articleDescription">
-                                    <a href="">
+                                    <a href="item.html">
                                         <ul>
                                             <li>АВТОР: Джошуа Блох</li>
                                             <li>РІК : 2008</li>
@@ -155,7 +117,7 @@
                             <img src="../img/items/books/welcome-page3.jpg" alt="Девід Макфарланд,Большая книга CSS3">
                             <div class="hidden">
                                 <div class="articleDescription">
-                                    <a href="">
+                                    <a href="item.html">
                                         <ul>
                                             <li>АВТОР: Девід Макфарланд</li>
                                             <li>РІК : 2014</li>
@@ -172,7 +134,7 @@
                             <img src="../img/items/books/welcome-page4.jpg" alt="Леа Веру,Секреты CSS. Идеальные решения ежедневных задач.">
                             <div class="hidden">
                                 <div class="articleDescription">
-                                    <a href="">
+                                    <a href="item.html">
                                         <ul>
                                             <li>АВТОР: Леа Веру</li>
                                             <li>РІК : 2016</li>
@@ -189,7 +151,7 @@
                             <img src="../img/items/books/welcome-page5.jpg" alt="Семі П'юрівал,Основы разработки веб-приложений">
                             <div class="hidden">
                                 <div class="articleDescription">
-                                    <a href="">
+                                    <a href="item.html">
                                         <ul>
                                             <li>АВТОР: Семі П'юрівал</li>
                                             <li>РІК : 2015</li>
@@ -206,7 +168,7 @@
                             <img src="../img/items/books/welcome-page6.jpg" alt="Ліза Денжер Гарднер,Джейсон Грігзбі,Разработка веб-сайтов для мобильных устройств">
                             <div class="hidden">
                                 <div class="articleDescription">
-                                    <a href="">
+                                    <a href="item.html">
                                         <ul>
                                             <li>АВТОР: Ліза Денжер Гарднер,Джейсон Грігзбі</li>
                                             <li>РІК : 2013</li>
@@ -223,7 +185,7 @@
                             <img src="../img/items/books/welcome-page7.jpg" alt="Азат Мардан,Быстрое Прототипирование с JS">
                             <div class="hidden">
                                 <div class="articleDescription">
-                                    <a href="">
+                                    <a href="item.html">
                                         <ul>
                                             <li>АВТОР: Азат Мардан</li>
                                             <li>РІК : 2014</li>
@@ -241,7 +203,7 @@
                             JavaScript-приложений">
                             <div class="hidden">
                                 <div class="articleDescription">
-                                    <a href="">
+                                    <a href="item.html">
                                         <ul>
                                             <li>АВТОР: Едді Османі</li>
                                             <li>РІК : 2011</li>
@@ -259,7 +221,7 @@
                             и HTML5.">
                             <div class="hidden">
                                 <div class="articleDescription">
-                                    <a href="">
+                                    <a href="item.html">
                                         <ul>
                                             <li>АВТОР: Робін Ніксон</li>
                                             <li>РІК : 2016</li>
@@ -276,7 +238,7 @@
                             <img src="../img/items/books/welcome-page10.jpg" alt="Роман Клименко,Веб-мастеринг на 100%">
                             <div class="hidden">
                                 <div class="articleDescription">
-                                    <a href="">
+                                    <a href="item.html">
                                         <ul>
                                             <li>АВТОР: </li>
                                             <li>РІК : 2013</li>
@@ -293,7 +255,7 @@
                             <img src="../img/items/books/welcome-page11.jpg" alt="Девід Херман,Сила JavaScript. 68 способов эффективного использования JS">
                             <div class="hidden">
                                 <div class="articleDescription">
-                                    <a href="">
+                                    <a href="item.html">
                                         <ul>
                                             <li>АВТОР: Девід Херман</li>
                                             <li>РІК : 2013</li>
