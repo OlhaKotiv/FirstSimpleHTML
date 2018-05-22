@@ -11,7 +11,7 @@ $(document).ready(function() {
     }
   });
 
-//------------------------ enter butto
+//------------------------ enter button
 
   $(".b-login").on("click", function() {
 //---------------------------- autorization parameters
