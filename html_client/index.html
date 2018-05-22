@@ -16,17 +16,42 @@
 </head>
 
 <body>
-    <div class="container flex-column">
+    <div class="page-wrapper flex-column">
         <!-- HEADER STARTS-->
         <header class="flex-column">
-            <div class="headerTop flex-row">
-                <a href="index.html" class="logo">
-                    <h2>DevLibrary</h2>
+            <div id="headerTop" class="flex-row">
+                <a href="index.html" class="logoMain">DevLibrary
                 </a>
                 <nav>
                     <ul class=" topNav flex-row">
                         <li>
-                            <a href="list.html">Книги</a>
+                            <a class="title" href="list.html">Книги</a>
+                            <!--<ul class="dropdown-menu">
+                                <li>
+                                    <a href="list.html">JavaScript</a>
+                                </li>
+                                <li>
+                                    <a href="list.html">HTML</a>
+                                </li>
+                                <li>
+                                    <a href="list.html">CSS</a>
+                                </li>
+                                <li>
+                                    <a href="list.html">SEO</a>
+                                </li>
+                                <li>
+                                    <a href="list.html">ENGLISH</a>
+                                </li>
+                                <li>
+                                    <a href="list.html">LINUX</a>
+                                </li>
+                                <li>
+                                    <a href="list.html">WORDPRESS</a>
+                                </li>
+                                <li>
+                                    <a href="list.html">OTHER</a>
+                                </li>
+                            </ul>-->
                         </li>
                         <li>
                             <a href="list.html">Блог</a>
@@ -43,14 +68,8 @@
             <section class="welcome flex-column">
                 <h2>Дізнайся щось нове сьогодні</h2>
                 <form class="search">
-                    <input type="search" placeholder="Пошук">
-                    <input type="submit" value="Знайти">
+                    <input id="superSearch" type="search" placeholder="Пошук">
                 </form>
-                <div class="down">
-                    <a href="#main">
-                        <i class="fas fa-angle-down"></i>
-                    </a>
-                </div>
             </section>
         </header>
         <!--HEADER ENDS-->
@@ -58,219 +77,217 @@
 
         <!--NAVIGATION ENDS-->
         <!--MAIN PART STARTS-->
-        <main class="flex-row" id="main">
-            <section class=" articles page-wrapper flex-column">
-                <div class="article-holder">
-                    <article>
-                        <div class="articleImage">
-                            <img src="../img/items/books/welcome-page.jpg" alt="Скот Чакон, Бен Штрауб, Git для профессионального программиста.">
-                            <div class="hidden">
-                                <div class="articleDescription">
-                                    <a href="item.html">
-                                        <ul>
-                                            <li>АВТОР: Скот Чакон, Бен Штрауб</li>
-                                            <li>РІК : 2016</li>
-                                            <li>МОВА : Російська</li>
-                                            <li>СТОРІНОК : 496</li>
-                                        </ul>
-                                    </a>
-                                </div>
+        <main id="main">
+            <div class="article-holder flex-row ">
+                <article>
+                    <div class="articleImage">
+                        <img src="../img/items/books/welcome-page.jpg" alt="Скот Чакон, Бен Штрауб, Git для профессионального программиста.">
+                        <div class="hidden">
+                            <div class="articleDescription">
+                                <a href="item.html">
+                                    <ul>
+                                        <li>АВТОР: Скот Чакон, Бен Штрауб</li>
+                                        <li>РІК : 2016</li>
+                                        <li>МОВА : Російська</li>
+                                        <li>СТОРІНОК : 496</li>
+                                    </ul>
+                                </a>
                             </div>
                         </div>
-                    </article>
-                    <article>
-                        <div class="articleImage">
-                            <img src="../img/items/books/welcome-page1.jpg" alt="Крейг Хант,TCP/IP. Сетевое администрирование">
-                            <div class="hidden">
-                                <div class="articleDescription">
-                                    <a href="item.html">
-                                        <ul>
-                                            <li>АВТОР: Крейг Хант</li>
-                                            <li>РІК : 2007</li>
-                                            <li>МОВА : Російська</li>
-                                            <li>СТОРІНОК : 816</li>
-                                        </ul>
-                                    </a>
-                                </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="articleImage">
+                        <img src="../img/items/books/welcome-page1.jpg" alt="Крейг Хант,TCP/IP. Сетевое администрирование">
+                        <div class="hidden">
+                            <div class="articleDescription">
+                                <a href="item.html">
+                                    <ul>
+                                        <li>АВТОР: Крейг Хант</li>
+                                        <li>РІК : 2007</li>
+                                        <li>МОВА : Російська</li>
+                                        <li>СТОРІНОК : 816</li>
+                                    </ul>
+                                </a>
                             </div>
                         </div>
-                    </article>
-                    <article>
-                        <div class="articleImage">
-                            <img src="../img/items/books/welcome-page2.jpg" alt="Джошуа Блох,Effective Java">
-                            <div class="hidden">
-                                <div class="articleDescription">
-                                    <a href="item.html">
-                                        <ul>
-                                            <li>АВТОР: Джошуа Блох</li>
-                                            <li>РІК : 2008</li>
-                                            <li>МОВА : Англійська</li>
-                                            <li>СТОРІНОК : 370</li>
-                                        </ul>
-                                    </a>
-                                </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="articleImage">
+                        <img src="../img/items/books/welcome-page2.jpg" alt="Джошуа Блох,Effective Java">
+                        <div class="hidden">
+                            <div class="articleDescription">
+                                <a href="item.html">
+                                    <ul>
+                                        <li>АВТОР: Джошуа Блох</li>
+                                        <li>РІК : 2008</li>
+                                        <li>МОВА : Англійська</li>
+                                        <li>СТОРІНОК : 370</li>
+                                    </ul>
+                                </a>
                             </div>
                         </div>
-                    </article>
-                    <article>
-                        <div class="articleImage">
-                            <img src="../img/items/books/welcome-page3.jpg" alt="Девід Макфарланд,Большая книга CSS3">
-                            <div class="hidden">
-                                <div class="articleDescription">
-                                    <a href="item.html">
-                                        <ul>
-                                            <li>АВТОР: Девід Макфарланд</li>
-                                            <li>РІК : 2014</li>
-                                            <li>МОВА : Російська</li>
-                                            <li>СТОРІНОК : 608</li>
-                                        </ul>
-                                    </a>
-                                </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="articleImage">
+                        <img src="../img/items/books/welcome-page3.jpg" alt="Девід Макфарланд,Большая книга CSS3">
+                        <div class="hidden">
+                            <div class="articleDescription">
+                                <a href="item.html">
+                                    <ul>
+                                        <li>АВТОР: Девід Макфарланд</li>
+                                        <li>РІК : 2014</li>
+                                        <li>МОВА : Російська</li>
+                                        <li>СТОРІНОК : 608</li>
+                                    </ul>
+                                </a>
                             </div>
                         </div>
-                    </article>
-                    <article>
-                        <div class="articleImage">
-                            <img src="../img/items/books/welcome-page4.jpg" alt="Леа Веру,Секреты CSS. Идеальные решения ежедневных задач.">
-                            <div class="hidden">
-                                <div class="articleDescription">
-                                    <a href="item.html">
-                                        <ul>
-                                            <li>АВТОР: Леа Веру</li>
-                                            <li>РІК : 2016</li>
-                                            <li>МОВА : Російська</li>
-                                            <li>СТОРІНОК : 336</li>
-                                        </ul>
-                                    </a>
-                                </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="articleImage">
+                        <img src="../img/items/books/welcome-page4.jpg" alt="Леа Веру,Секреты CSS. Идеальные решения ежедневных задач.">
+                        <div class="hidden">
+                            <div class="articleDescription">
+                                <a href="item.html">
+                                    <ul>
+                                        <li>АВТОР: Леа Веру</li>
+                                        <li>РІК : 2016</li>
+                                        <li>МОВА : Російська</li>
+                                        <li>СТОРІНОК : 336</li>
+                                    </ul>
+                                </a>
                             </div>
                         </div>
-                    </article>
-                    <article>
-                        <div class="articleImage">
-                            <img src="../img/items/books/welcome-page5.jpg" alt="Семі П'юрівал,Основы разработки веб-приложений">
-                            <div class="hidden">
-                                <div class="articleDescription">
-                                    <a href="item.html">
-                                        <ul>
-                                            <li>АВТОР: Семі П'юрівал</li>
-                                            <li>РІК : 2015</li>
-                                            <li>МОВА : Російська</li>
-                                            <li>СТОРІНОК : 272</li>
-                                        </ul>
-                                    </a>
-                                </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="articleImage">
+                        <img src="../img/items/books/welcome-page5.jpg" alt="Семі П'юрівал,Основы разработки веб-приложений">
+                        <div class="hidden">
+                            <div class="articleDescription">
+                                <a href="item.html">
+                                    <ul>
+                                        <li>АВТОР: Семі П'юрівал</li>
+                                        <li>РІК : 2015</li>
+                                        <li>МОВА : Російська</li>
+                                        <li>СТОРІНОК : 272</li>
+                                    </ul>
+                                </a>
                             </div>
                         </div>
-                    </article>
-                    <article>
-                        <div class="articleImage">
-                            <img src="../img/items/books/welcome-page6.jpg" alt="Ліза Денжер Гарднер,Джейсон Грігзбі,Разработка веб-сайтов для мобильных устройств">
-                            <div class="hidden">
-                                <div class="articleDescription">
-                                    <a href="item.html">
-                                        <ul>
-                                            <li>АВТОР: Ліза Денжер Гарднер,Джейсон Грігзбі</li>
-                                            <li>РІК : 2013</li>
-                                            <li>МОВА : Російська</li>
-                                            <li>СТОРІНОК : 440</li>
-                                        </ul>
-                                    </a>
-                                </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="articleImage">
+                        <img src="../img/items/books/welcome-page6.jpg" alt="Ліза Денжер Гарднер,Джейсон Грігзбі,Разработка веб-сайтов для мобильных устройств">
+                        <div class="hidden">
+                            <div class="articleDescription">
+                                <a href="item.html">
+                                    <ul>
+                                        <li>АВТОР: Ліза Денжер Гарднер,Джейсон Грігзбі</li>
+                                        <li>РІК : 2013</li>
+                                        <li>МОВА : Російська</li>
+                                        <li>СТОРІНОК : 440</li>
+                                    </ul>
+                                </a>
                             </div>
                         </div>
-                    </article>
-                    <article>
-                        <div class="articleImage">
-                            <img src="../img/items/books/welcome-page7.jpg" alt="Азат Мардан,Быстрое Прототипирование с JS">
-                            <div class="hidden">
-                                <div class="articleDescription">
-                                    <a href="item.html">
-                                        <ul>
-                                            <li>АВТОР: Азат Мардан</li>
-                                            <li>РІК : 2014</li>
-                                            <li>МОВА : Російська</li>
-                                            <li>СТОРІНОК : 240</li>
-                                        </ul>
-                                    </a>
-                                </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="articleImage">
+                        <img src="../img/items/books/welcome-page7.jpg" alt="Азат Мардан,Быстрое Прототипирование с JS">
+                        <div class="hidden">
+                            <div class="articleDescription">
+                                <a href="item.html">
+                                    <ul>
+                                        <li>АВТОР: Азат Мардан</li>
+                                        <li>РІК : 2014</li>
+                                        <li>МОВА : Російська</li>
+                                        <li>СТОРІНОК : 240</li>
+                                    </ul>
+                                </a>
                             </div>
                         </div>
-                    </article>
-                    <article>
-                        <div class="articleImage">
-                            <img src="../img/items/books/welcome-page8.jpg" alt="Едді Османі,Паттерны для масштабируемых
+                    </div>
+                </article>
+                <article>
+                    <div class="articleImage">
+                        <img src="../img/items/books/welcome-page8.jpg" alt="Едді Османі,Паттерны для масштабируемых
                             JavaScript-приложений">
-                            <div class="hidden">
-                                <div class="articleDescription">
-                                    <a href="item.html">
-                                        <ul>
-                                            <li>АВТОР: Едді Османі</li>
-                                            <li>РІК : 2011</li>
-                                            <li>МОВА : Російська</li>
-                                            <li>СТОРІНОК : 36</li>
-                                        </ul>
-                                    </a>
-                                </div>
+                        <div class="hidden">
+                            <div class="articleDescription">
+                                <a href="item.html">
+                                    <ul>
+                                        <li>АВТОР: Едді Османі</li>
+                                        <li>РІК : 2011</li>
+                                        <li>МОВА : Російська</li>
+                                        <li>СТОРІНОК : 36</li>
+                                    </ul>
+                                </a>
                             </div>
                         </div>
-                    </article>
-                    <article>
-                        <div class="articleImage">
-                            <img src="../img/items/books/welcome-page9.jpeg" alt="Робін Ніксон,Создаем динамические веб-сайты с помощью PHP, MySQL, JavaScript, CSS
+                    </div>
+                </article>
+                <article>
+                    <div class="articleImage">
+                        <img src="../img/items/books/welcome-page9.jpeg" alt="Робін Ніксон,Создаем динамические веб-сайты с помощью PHP, MySQL, JavaScript, CSS
                             и HTML5.">
-                            <div class="hidden">
-                                <div class="articleDescription">
-                                    <a href="item.html">
-                                        <ul>
-                                            <li>АВТОР: Робін Ніксон</li>
-                                            <li>РІК : 2016</li>
-                                            <li>МОВА : Російська</li>
-                                            <li>СТОРІНОК : 768</li>
-                                        </ul>
-                                    </a>
-                                </div>
+                        <div class="hidden">
+                            <div class="articleDescription">
+                                <a href="item.html">
+                                    <ul>
+                                        <li>АВТОР: Робін Ніксон</li>
+                                        <li>РІК : 2016</li>
+                                        <li>МОВА : Російська</li>
+                                        <li>СТОРІНОК : 768</li>
+                                    </ul>
+                                </a>
                             </div>
                         </div>
-                    </article>
-                    <article>
-                        <div class="articleImage">
-                            <img src="../img/items/books/welcome-page10.jpg" alt="Роман Клименко,Веб-мастеринг на 100%">
-                            <div class="hidden">
-                                <div class="articleDescription">
-                                    <a href="item.html">
-                                        <ul>
-                                            <li>АВТОР: </li>
-                                            <li>РІК : 2013</li>
-                                            <li>МОВА : Російська</li>
-                                            <li>СТОРІНОК : 512</li>
-                                        </ul>
-                                    </a>
-                                </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="articleImage">
+                        <img src="../img/items/books/welcome-page10.jpg" alt="Роман Клименко,Веб-мастеринг на 100%">
+                        <div class="hidden">
+                            <div class="articleDescription">
+                                <a href="item.html">
+                                    <ul>
+                                        <li>АВТОР: </li>
+                                        <li>РІК : 2013</li>
+                                        <li>МОВА : Російська</li>
+                                        <li>СТОРІНОК : 512</li>
+                                    </ul>
+                                </a>
                             </div>
                         </div>
-                    </article>
-                    <article>
-                        <div class="articleImage">
-                            <img src="../img/items/books/welcome-page11.jpg" alt="Девід Херман,Сила JavaScript. 68 способов эффективного использования JS">
-                            <div class="hidden">
-                                <div class="articleDescription">
-                                    <a href="item.html">
-                                        <ul>
-                                            <li>АВТОР: Девід Херман</li>
-                                            <li>РІК : 2013</li>
-                                            <li>МОВА : Російська</li>
-                                            <li>СТОРІНОК : 288</li>
-                                        </ul>
-                                    </a>
-                                </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="articleImage">
+                        <img src="../img/items/books/welcome-page11.jpg" alt="Девід Херман,Сила JavaScript. 68 способов эффективного использования JS">
+                        <div class="hidden">
+                            <div class="articleDescription">
+                                <a href="item.html">
+                                    <ul>
+                                        <li>АВТОР: Девід Херман</li>
+                                        <li>РІК : 2013</li>
+                                        <li>МОВА : Російська</li>
+                                        <li>СТОРІНОК : 288</li>
+                                    </ul>
+                                </a>
                             </div>
                         </div>
-                    </article>
+                    </div>
+                </article>
 
-                </div>
-                <div class="moreItems">Більше</div>
-            </section>
+            </div>
+            <div class="moreItems">Більше</div>
         </main>
         <!--MAIN PART ENDS-->
         <!--FOOTER STARTS-->
@@ -287,14 +304,17 @@
                     <i class="far fa-hand-spock"></i>
                 </a>
             </div>
-        </footer>
-        <!--FOOTER ENDS-->
-        <!--SCROLL TOP-->
-        <div class="scrolltop"></div>
+    </div>
+    </footer>
+    <!--FOOTER ENDS-->
+    <!--SCROLL TOP-->
+    <div class="scrolltop"></div>
     </div>
     <!--SCRIPTS-->
     <script src="../scripts/jquery-min.js"></script>
     <script src="../scripts/client/script.js"></script>
+    <script src="../scripts/client/menucolor.js"></script>
+    <script src="../scripts/client/search.js"></script>
 </body>
 
 </html>

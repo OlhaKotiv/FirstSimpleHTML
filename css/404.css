@@ -1,59 +1,50 @@
+
 @import url("styles.css");
-
-/*header styles*/
 header {
-  background-image: url("../img/sergey-zolkin-192937-unsplash.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-  position: relative;
-  color: rgb(239, 242, 255);
-  flex-grow: 1 auto;
-}
-.headerTop {
-  flex-grow: 0;
-  justify-content: space-between;
-  align-items: center;
-}
-.topNav li {
-  list-style-type: none;
-  margin-right: 15px;
-  font-size: 20px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-.topNav a {
-  border-bottom: 3px solid transparent;
-  transition: 0.2s;
-  color: rgb(239, 242, 255);
-}
-.topNav a:hover {
-  color: #06f0a2fd;
-  border-bottom: 3px solid #06f0a2fd;
-  transition: 0.2s;
-}
-.logo {
-  margin-left: 30px;
-  font-family: "Permanent Marker", cursive;
-  font-size: 35px;
-  color: rgb(239, 242, 255);
-}
-.logo:hover {
-  color: #06f0a2fd;
-}
-.sad,
-.big {
-  font-size: 75px;
-}
-
-.welcome {
-  flex-grow: 1 auto;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 56px;
-  font-weight: 600;
-  line-height: 62px;
-  margin-bottom: 15%;
-}
+    background-image: url("../img/sergey-zolkin-192937-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    color: rgb(239, 242, 255);
+    flex-grow: 1 auto;
+  }
+  .headerTop {
+    flex-grow: 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logoMain{color:rgb(239, 242, 255) }
+  .topNav li {
+    list-style-type: none;
+    margin-right: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .topNav a {
+    border-bottom: 3px solid transparent;
+    transition: 0.2s;
+    color: rgb(239, 242, 255);
+  }
+  .topNav a:hover {
+    color: #06f0a2fd;
+    border-bottom: 3px solid #06f0a2fd;
+    transition: 0.2s;
+  }
+  
+  .sad,
+  .big {
+    font-size: 75px;
+  }
+  .welcome {
+    flex-grow: 1 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 62px;
+    margin-bottom: 15%;
+  }

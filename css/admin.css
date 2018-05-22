@@ -42,7 +42,7 @@
   display: flex;
 }
 .flex-row {
-  lex-direction: row;
+  flex-direction: row;
   display: flex;
 }
 .flex-row-wrap {
@@ -589,7 +589,7 @@ textarea {
   border: 1px solid #d5d5d5;
 }
 
-/************************* Прелодеры ***************************/
+/************************* preloaders ***************************/
 .loader {
   display: none;
   height: 15px;
