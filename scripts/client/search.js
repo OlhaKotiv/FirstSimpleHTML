@@ -28,13 +28,13 @@
                 var val = autoFillBar.find('.active').text();
                 input.val(val);
             } else if (e.keyCode == 13) {
-                //тут можно сделать переход на страницу статьи или все что пожелаешь
+                //go on page
             } else {
                 searchCheck();
             }
         });
         autoFillBar.on('click', '.item', function(){
-            //тут можно сделать переход на страницу статьи или все что пожелаешь
+            //go on page
             input.val( $(this).text() );
             return false;
         });
@@ -47,11 +47,11 @@
         });
         function searchCheck(){
             if (input.val().length >= 2){
-                // тут нужно будет описать ajax-запрос к бэкэнду, который вернет результаты поиска
+                // ajax for back-end must be there
                 var data = {};
                 data.action = 'search';
                 data.request = input.val();
-                // ajax-запрос на сервер, откомментируй, когда будет куда отсылать POST
+                // ajax-request,recoment when we'll know where send POST
   //                        $.ajax({
   //                            url: '/',
   //                            type: 'POST',
@@ -59,11 +59,10 @@
   //                            data: data
   //                        }).done(function(data){
                             autoFillBar.children().remove();
-                            // следующая строчка читает результат ajax-запроса, откомментируй ее, когда будет готов бэкэнд
+                            // the string which is reads ajax-request's result
                             // var articlesArray = data.result;
-                            // Здесь я описываю фейковый поиск, чтобы продемонстрировать работу плагина
-                            // строки 241 - 262 можно выпилить несчадно
-                            // поиск ведется только по одному слову, но твоя база точно может лучше ;)
+                            
+                            //fake search
                             var articlesArray = [];
                             var dbArticles = [
                                 {title: "HTML"},
@@ -81,7 +80,7 @@
                                     articlesArray.push(dbArticles[j]);
                                 }
                             }
-                            // Здесь фейк заканчивается и начинаются чудеса
+                            // fake's end
                             for (var i=0; i <= articlesArray.length - 1; i++){
                                 var name = articlesArray[i].title;
                                 var regex = input.val();
@@ -113,7 +112,7 @@
                                         '</div>');
                             }
                             autoFillBar.slideDown('fast');
-                          // конец ajax-запроса, ты знаешь, что делать ;)
+                          // ajax-request's end
   //                                })
             }
         }

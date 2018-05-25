@@ -1,3 +1,5 @@
+/*click on general elements of admin panel*/
+
 $(document).ready(function() {
   //*********** cancel buton ***********//
 

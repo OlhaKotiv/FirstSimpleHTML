@@ -15,13 +15,13 @@
 
 <body>
     <div class="page-wrapper flex-column">
-        <header class="itemHeader" >
-            <div class="headerTop flex-row">
-                <a href="index.html" class="logoItem">
-                    <h2>DevLibrary</h2>
+        <header class="itemHeader background-repeat">
+            <div class="headerTop flex-row alignCenterSpace">
+                <a href="index.html" class="logoItem" id="LOGO">
+                    DevLibrary
                 </a>
                 <nav>
-                    <ul class=" topNav flex-row">
+                    <ul class=" topNav flex-row navBorderBottom" id="NAV">
                         <li>
                             <a href="list.html">Книги</a>
                         </li>
@@ -29,33 +29,32 @@
                             <a href="list.html">Блог</a>
                         </li>
                         <li>
-                            <a href="signin.html">Увійти</a>
+                            <a href="../html_admin/login.html">Увійти</a>
                         </li>
                         <li>
-                            <a href="signup.html">Зареєстуватись</a>
+                            <a href="404.html">Зареєстуватись</a>
                         </li>
                     </ul>
                 </nav>
             </div>
             <div class="letsSearch ">
                 <form class="search">
-                    <input type="search" placeholder="Пошук">
+                    <input id="superSearch" type="search" placeholder="Пошук">
                     <!--<input type="submit" value="Знайти">-->
                 </form>
             </div>
         </header>
-        <main>
+        <main class="flex-row">
             <section class="item">
-                <div class="article-wrapper flex-row">
-                    <!-- Статья -->
+                <div class="article-wrapper flex-row wh-100">
                     <article>
-                        <img src="../img/ref.jpg" alt="Способи знизити reflow">
+                        <img src="../img/ref.jpg" alt="10 способів мінімізувати reflow">
                         <div class="details">
-                            <div class="secondaryItem flex-row">
+                            <div class="secondaryItem flex-row alignCenterSpace">
                                 <span class="date">Додана: Пт, 9 Тра 2018 </span>
                                 <span class="views">Переглядів: 222</span>
                             </div>
-                            <h1>10 способів мінімізувати reflow і підвищити продуктивність</h1>
+                            <h2>10 способів мінімізувати reflow і підвищити продуктивність</h2>
                             <p>
                                 <span class="italic">
                                     <span class="important">Від автора:</span> незважаючи на те, що сторінки часом важать до 2Мб, продуктивність
@@ -117,7 +116,8 @@
                                 <br>Чим менше правил CSS, тим швидше reflow. Також по можливості слід уникати складних CSS селекторів.
                                 Особливо проблематично, якщо ви використовуєте фреймворк, наприклад, Bootstrap - кілька сайтів
                                 використовують одночасно більше половини всіх стилів. Такі інструменти як UnusedCSS, uCSS,
-                                grunt-uncss, і gulp-uncss можуть значно стиснути опис стилів і їх вагу. </p>
+                                grunt-uncss, і gulp-uncss можуть значно стиснути опис стилів і їх вагу.
+                            </p>
                             <p>
                                 <span class="important"> Мінімізуйте провали в DOM</span>
                                 <br> З цим буде трохи складніше - зменшіть розмір вашого DOM і кількості вузлів в кожній гілці.
@@ -147,22 +147,18 @@
                                 У цьому прикладі reflow викликається 3 рази:
                                 <br>
                                 <code><br>myelement = document.getElementById ( 'myelement');<br> myelement.width = '100px';<br> myelement.height
-                                = '200px';<br>myelement.style.margin = '10px';<br></code>
+                                    = '200px';<br>myelement.style.margin = '10px';<br></code>
                                 <br>Ми можемо зменшити кількість reflow до одного.
                                 <br>
                                 <code><br> myelement = document.getElementById (
-                                'myelement');<br> myelement.classList.add ( 'newstyles') ;<br>. newstyles {<br>width: 100px;<br> height:
-                                200px;<br>margin: 10px;}<br> </code>
+                                                                'myelement');<br> myelement.classList.add ( 'newstyles') ;<br>. newstyles {<br>width: 100px;<br> height:
+                                                                200px;<br>margin: 10px;}<br> </code>
                                 <br>Також можна звести до мінімуму необхідність лізти в DOM. Припустимо, що ви захотіли створити
                                 маркований список. Додання кожного елементу окремо спричинить за собою аж 7 reflow - один
                                 при вставці тега ul, 3 при вставці li і ще 3 при вставці тексту до пунктів списку. Хоча,
                                 це ж можна зробити і з одним reflow, якщо використовувати фрагмент DOM і заздалегідь створити
                                 в пам'яті необхідні вузли.
-                                <br>
-                                <code><br>var i, li, <br>frag = document.createDocumentFragment
-                                (),<br> ul = frag.appendChild (document.createElement ( 'ul') );<br> <br>for (i = 1; i
-                                <=3 ; i ++) {<br>li=u l.appendChild (document.createElement ( 'li'));<br> li.textContent='item' + i;} <br><br>document.body.appendChild (frag);
-                                </code> </p>
+                            </p>
                             <p>
                                 <span class="important">Обмежте задіяні елементи</span>
                                 <br>Уникайте ситуацій, коли в reflow може бути залучено величезну кількість елементів. Можна
@@ -192,29 +188,30 @@
                         </div>
                         <div class="comment">
                             <h3>Залиште свій коментар</h3>
-                            <form class="leavecomment">
-                                <input type="text" placeholder="Введіть своє ім'я">
-                                <textarea wrp-cols="30" name="text" rows="5"></textarea>
-                                <input type="submit" value="Опублікувати">
-                            </form>
+                            <form>
 
+                                <textarea name="text" rows="5"></textarea>
+                                <input type="text" placeholder="Введіть своє ім'я">
+                                <input type="submit" value="Опублікувати">
+
+                            </form>
                             <div class="com">
                                 <h6>Климентій Гевко</h6>
-                                <time>12 Тра 2018</time>
+                                <time datetime="2018-05-12">12 Тра 2018</time>
                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, sunt dignissimos nostrum
                                     quas distinctio, delectus iure corporis ab repellat recusandae quasi sit animi et possimus
                                     vel culpa laudantium? Sit, sequi? </p>
                             </div>
                             <div class="com">
                                 <h6>Роман Семенюк</h6>
-                                <time>12 Тра 2018</time>
+                                <time datetime="2018-05-12">12 Тра 2018</time>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium animi aperiam dolore
                                     doloremque rem iste eaque possimus, consectetur ducimus voluptatibus beatae deserunt
                                     ipsam, error commodi nisi magni corporis adipisci. Tenetur. </p>
                             </div>
                             <div class="com">
                                 <h6>Василь Швець</h6>
-                                <time>12 Чер 2018</time>
+                                <time datetime="2018-06-12">12 Чер 2018</time>
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor ut cum eos. Expedita harum
                                     architecto sit commodi corporis, tempore at rem alias? Veritatis ipsa libero consequuntur
                                     sed, quos ipsam quidem. </p>
@@ -223,9 +220,9 @@
                     </article>
                     <!--article end-->
                     <!--aside articles -->
-                    <aside class="other-articles">
+                    <aside class="other-articles flex-column">
                         <!-- tags -->
-                        <div class="tags">
+                        <div class="tags flex-row">
                             <a href="list.html">#css</a>
                             <a href="list.html">#верстка</a>
                             <a href="list.html">#оптимізація</a>
@@ -262,7 +259,6 @@
                     </aside>
                     <!-- aside article end -->
                 </div>
-
             </section>
         </main>
         <footer>
@@ -282,6 +278,7 @@
     </div>
     <script src="../scripts/jquery-min.js"></script>
     <script src="../scripts/client/script.js"></script>
+    <script src="../scripts/client/search.js"></script>
 </body>
 
 </html>

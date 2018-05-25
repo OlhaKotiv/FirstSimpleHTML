@@ -4,18 +4,9 @@
 <head>
     <title>Адмін-панель</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/admin.css?version=1">
+    <link rel="stylesheet" href="../css/admin.css">
     <meta name="robots" content="noindex, nofollow">
     <link rel="shortcut icon" href="../img/neurocapability-favicon-1.png">
-    <script src="../scripts/jquery-min.js"></script>
-    <script src="../scripts/jquery-ui-min.js"></script>
-    <script src="../scripts/admin/texthighlighter/rangy-core.js"></script>
-    <script src="../scripts/admin/texthighlighter/jquery.texthighlighter.js"></script>
-    <script src="../scripts/admin/mediadescription.js"></script>
-    <script src="../scripts/admin/error.js"></script>
-    <script src="../scripts/admin/aliasmaker.js"></script>
-    <script src="../scripts/admin/click-actions.js?version=1"></script>
-    <script src="../scripts/admin/categories.js?version=1"></script>
 </head>
 
 <body>
@@ -23,7 +14,7 @@
     <header>
         <div class="flex-row">
             <div class="title">Ви ввійшли як
-                <span id="moderator">superadmin</span>
+                <span id="moderator">admin</span>
             </div>
             <div class="buttons">
                 <a href="#">Вихід</a>
@@ -80,10 +71,10 @@
             <textarea id="shortdescription"></textarea>
         </form>
         <div class="flex-col flex-full padding20">
-            <div class="mediaelement article-mediadescr clear">
+            <form class="mediaelement article-mediadescr clear">
                 <label for="mediacontent">Текст на сторінці категорії</label>
                 <div id="mediacontent" class="mediacontent" style="display: none"></div>
-            </div>
+            </form>
         </div>
         <!-- editor's form end -->
         <!-- history ofmoderation -->
@@ -139,6 +130,10 @@
         <small>#DevLibrary © 2018</small>
     </footer>
     <!-- footer end -->
+    <script src="../scripts/jquery-min.js"></script>
+    <script src="../scripts/jquery-ui-min.js"></script>
+    <script src="../scripts/admin/error.js"></script>
+    <script src="../scripts/admin/aliasmaker.js"></script>
 </body>
 
 </html>

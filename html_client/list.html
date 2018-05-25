@@ -10,39 +10,39 @@
     <meta name="og:image" content="../img/welcome.jpg">
     <meta name="robots" content="index, follow">
     <link rel="shortcut icon" href="../img/favicon.png">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
 </head>
 
 <body class="listBody">
     <div class="page-wrapper flex-column ">
         <!--header start-->
-        <header id="top" class="itemHeader" >
-            <div class="headerTop flex-row">
-                <a href="index.html" class="logoItem">
-                    <h2>DevLibrary</h2>
+        <header id="top" class="itemHeader background-repeat" >
+            <div class="headerTop flex-row alignCenterSpace">
+                <a href="index.html" class="logoItem" id="LOGO">
+                    DevLibrary
                 </a>
                 <!--navigation start-->
-                <nav role="navigation">
-                    <ul class=" topNav flex-row">
+                <nav >
+                    <ul class=" topNav flex-row navBorderBottom" id="NAV">
                         <li>
-                            <a href="">Книги</a>
+                            <a href="list.html">Книги</a>
                         </li>
                         <li>
-                            <a href="">Блог</a>
+                            <a href="list.html">Блог</a>
                         </li>
                         <li>
-                            <a href="">Увійти</a>
+                            <a href="../html_admin/login.html">Увійти</a>
                         </li>
                         <li>
-                            <a href="">Зареєстуватись</a>
+                            <a href="404.html">Зареєстуватись</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </header>
         <!--main start-->
-        <main role="main">
-            <div class="article-holderList flex-row">
+        <main >
+            <div class="article-holderList flex-row wrapNspace">
 
                 <article>
                     <a href="article.html">
@@ -53,7 +53,7 @@
                                 залишається гарячою темою для обговорення. Якщо у вас відмінний веб-додаток, і він подобається
                                 користувачам, то висока конверсія вам забезпечена.</p>
                         </div>
-                        <div class="secondary">
+                        <div class="secondary flex-row">
                             <span class="views">8</span>
                             <span class="date">Пт, 17. Лют 2017</span>
                         </div>
@@ -68,7 +68,7 @@
                             <p>У цьому матеріалі простою мовою розповідається про те, як в JavaScript влаштована робота
                                     з модулями. Стаття може не тільки допомогти новачкам зрозуміти, що відбувається.</p>
                         </div>
-                        <div class="secondary">
+                        <div class="secondary flex-row alignCenterSpace">
                             <span class="views">8</span>
                             <span class="date">Пт, 17. Лют 2017</span>
                         </div>
@@ -83,7 +83,7 @@
                             <p>Представляємо вашій увазі підбірку 15 розширень для Visual Studio Code (VSCode), які стануть
                                     в нагоді програмісту будь-якого рівня.</p>
                         </div>
-                        <div class="secondary">
+                        <div class="secondary flex-row alignCenterSpace ">
                             <span class="views">8</span>
                             <span class="date">Пт, 17. Лют 2017</span>
                         </div>
@@ -97,7 +97,7 @@
                             <p>У статті я хочу розповісти, що ж із себе представляють HTTP-методи GET / POST / PUT / DELETE
                                     та інші, для чого вони були придумані і як їх використовувати відповідно до REST.</p>
                         </div>
-                        <div class="secondary">
+                        <div class="secondary flex-row alignCenterSpace">
                             <span class="views">8</span>
                             <span class="date">Пт, 17. Лют 2017</span>
                         </div>
@@ -112,7 +112,7 @@
                             <h2>Stylus за 20 хвилин</h2>
                             <p>Stylus це один з трійки найвідоміших препросесорів CSS. І за історичними обставинами найменш популярний, але потужніший за LESS та може потужніший ніж SASS. В цій статті ми ознайомимось з синтаксисом та деякими цікавими фічами, що дуже корисні в роботі.</p>
                         </div>
-                        <div class="secondary">
+                        <div class="secondary flex-row alignCenterSpace">
                             <span class="views">8</span>
                             <span class="date">Пт, 17. Лют 2017</span>
                         </div>
@@ -127,7 +127,7 @@
                             <h2>Цікаві пропозиції ECMAScript 2017, які ще не були прийняті</h2>
                             <p>Важко постійно мати оновлену інформацію щодо всіх нових пропозицій функцій. Щороку в комітет TC39, який контролює розвиток JavaScript, пропонуються десятки функцій.</p>
                         </div>
-                        <div class="secondary">
+                        <div class="secondary flex-row alignCenterSpace">
                             <span class="views">8</span>
                             <span class="date">Пт, 17. Лют 2017</span>
                         </div>
@@ -142,7 +142,7 @@
                             <h2>9 багатообіцяльних порад щодо промісів</h2>
                             <p>Щоб добре зрозуміти, як працюють проміси, важливо зрозуміти деякі базові концепції, на яких вони побудовані.</p>
                         </div>
-                        <div class="secondary">
+                        <div class="secondary flex-row alignCenterSpace">
                             <span class="views">8</span>
                             <span class="date">Пт, 17. Лют 2017</span>
                         </div>
@@ -157,7 +157,7 @@
                             <h2>Проблеми безпеки CSS</h2>
                             <p>Пару тижнів тому з'явилось декілька новин про вбудований в CSS 'keylogger'.Реальна проблема – думка, що сторонній контент не може нести у собі загрозу.</p>
                         </div>
-                        <div class="secondary">
+                        <div class="secondary flex-row alignCenterSpace">
                             <span class="views">8</span>
                             <span class="date">Пт, 17. Лют 2017</span>
                         </div>
@@ -172,7 +172,7 @@
                             <h2>Приголомшливі hover-ефекти за допомогою CSS змінних</h2>
                             <p>Нещодавно я надихнувся грайливою hover-анімацією на сайті Grover. Переміщення мишки над кнопкою підписки має градієнтну заливку, яка видозмінюється при пересуванні курсору. Ідея проста, але результатом є кнопка, що виділяється з-поміж інших.</p>
                         </div>
-                        <div class="secondary">
+                        <div class="secondary flex-row alignCenterSpace">
                             <span class="views">8</span>
                             <span class="date">Пт, 17. Лют 2017</span>
                         </div>
@@ -195,6 +195,7 @@
                 <a href="../html_admin/login.html">
                     <i class="far fa-hand-spock"></i>
                 </a>
+                </div>
         </footer>
         <!--scrolltop -->
         <div class="scrolltop"></div>

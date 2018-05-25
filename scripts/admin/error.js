@@ -1,3 +1,4 @@
+/*errors*/
 var timer = null;
 
 function hideError() {

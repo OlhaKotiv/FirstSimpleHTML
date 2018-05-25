@@ -1,3 +1,4 @@
+/*login*/
 $(document).ready(function() {
   //---------------------------- filters for invalid symbols
 

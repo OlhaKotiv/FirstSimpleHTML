@@ -7,16 +7,6 @@
     <link rel="stylesheet" href="../css/admin.css?version=1">
     <meta name="robots" content="noindex, nofollow">
     <link rel="shortcut icon" href="../img/neurocapability-favicon-1.png">
-    <script src="../scripts/jquery-min.js"></script>
-    <script src="../scripts/admin/texthighlighter/rangy-core.js"></script>
-    <script src="../scripts/admin/texthighlighter/jquery.texthighlighter.js"></script>
-    <script src="../scripts/admin/mediadescription.js"></script>
-    <script src="../scripts/admin/error.js"></script>
-    <script src="../scripts/admin/tags.js"></script>
-    <script src="../scripts/admin/aliasmaker.js"></script>
-    <script src="../scripts/admin/click-actions.js?version=1"></script>
-    <script src="../scripts/admin/images-actions.js?version=1"></script>
-    <script src="../scripts/admin/articles.js?version=1"></script>
 </head>
 
 <body>
@@ -24,7 +14,7 @@
     <header>
         <div class="flex-row">
             <div class="title">Ви ввійшли як
-                <span id="moderator">superadmin</span>
+                <span id="moderator">admin</span>
             </div>
             <div class="buttons">
                 <a href="#">Вихід</a>
@@ -42,28 +32,28 @@
 
         <!-- editor's form -->
         <div class="flex-col flex-full padding20">
-            <label for="imgarticle">Годовне зображення</label>
+            <label for="imgarticle">Головне зображення</label>
             <div class="logo-holder imgarticle">
-                <img src="../files/03/mainimage.jpg">
+                <img src="../img/no_image.png" alt="img">
             </div>
             <div class="flex-row">
                 <div class="button green imgarticle" id="main-article-img">+ Додати</div>
                 <div class="button red" id="del-main-img">Видалити</div>
-                <div style="height: 0; width: 0; overflow: hidden; float: left;">
+                <form style="height: 0; width: 0; overflow: hidden; float: left;">
                     <input id="imgarticle" type="file" name="shopimage" accept="image/*">
-                </div>
+                </form>
             </div>
         </div>
         <div class="flex-row flex-full">
             <div class="flex-col flex-half padding20">
-                <div class="input-row">
+                <form class="input-row">
                     <label for="title">Назва статті</label>
                     <input type="text" id="title">
-                </div>
-                <div class="input-row">
+                </form>
+                <form class="input-row">
                     <label for="alias">URL сторінки (без домена та /)</label>
                     <input type="text" id="alias">
-                </div>
+                </form>
                 <div class="input-row">
                     <span class="label">Категорії статті</span>
                     <div class="cat-holder check-holder flex-row flex-row-wrap" id="article-categories">
@@ -78,41 +68,41 @@
                 </div>
             </div>
             <div class="flex-col flex-half padding20">
-                <div class="input-row">
+                <form class="input-row">
                     <label for="htmltitle">META title</label>
                     <input type="text" id="htmltitle">
-                </div>
-                <div class="input-row">
+                </form>
+                <form class="input-row">
                     <label for="htmldescription">META description</label>
                     <input type="text" id="htmldescription">
-                </div>
-                <div class="input-row">
+                </form>
+                <form class="input-row">
                     <label for="htmlkeywords">META keywords</label>
                     <input type="text" id="htmlkeywords">
-                </div>
+                </form>
                 <div class="input-row flex-row">
-                    <div class="flex-col flex-half tag-holder">
+                    <form class="flex-col flex-half tag-holder">
                         <label for="tags">Введіть тег і натисніть ВВІД</label>
                         <input id="tags" type="text">
                         <div class="autofill-bar"></div>
-                    </div>
-                    <div class="flex-col flex-half">
+                    </form>
+                    <form class="flex-col flex-half">
                         <label for="article-tags">Теги статті</label>
                         <div id="article-tagsstyles" class="tags-holder">
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
-        <div class="flex-col flex-full padding20">
+        <form class="flex-col flex-full padding20">
             <label for="shortdescription">Короткий опис</label>
             <textarea id="shortdescription"></textarea>
-        </div>
+        </form>
         <div class="flex-col flex-full padding20">
-            <div class="mediaelement article-mediadescr clear">
+            <form class="mediaelement article-mediadescr clear">
                 <label for="mediacontent">Текст на сторінці статті</label>
                 <div id="mediacontent" class="mediacontent" style="display: none"></div>
-            </div>
+            </form>
         </div>
         <!-- editor's form end -->
         <!-- history of mderation -->
@@ -144,13 +134,16 @@
                 <div class="loader"></div>
             </div>
         </div>
-        <!-- byttons end -->
+        <!-- buttons end -->
     </div>
     <!-- footer -->
     <footer>
         <small>#DevLibrary © 2018</small>
     </footer>
     <!-- footer end -->
+    <script src="../scripts/jquery-min.js"></script>
+    <script src="../scripts/admin/error.js"></script>
+    <script src="../scripts/admin/aliasmaker.js"></script>
 </body>
 
 </html>
